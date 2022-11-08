@@ -1,29 +1,48 @@
 {
-  "name": "@jguaura/componets-lib",
+  "name": "jguaura-compo-lib",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/jguaura"
+    "access": "public"
   },
   "version": "0.0.1",
-  "description": "Wisboo component library",
+  "description": "21 21 21",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
-  "author": "Jose Guaura",
+  "author": "Jose Guaura jguaura@gmail.com",
   "devDependencies": {
+    "@babel/core": "^7.20.2",
     "@rollup/plugin-commonjs": "^23.0.2",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^8.3.3",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-interactions": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/builder-webpack4": "^6.5.13",
+    "@storybook/manager-webpack4": "^6.5.13",
+    "@storybook/react": "^6.5.13",
+    "@storybook/testing-library": "0.0.13",
     "@types/react": "^18.0.25",
+    "babel-loader": "^8.3.0",
     "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rollup": "^3.2.5",
     "rollup-plugin-dts": "^5.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
     "tslib": "^2.4.1",
     "typescript": "^4.8.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "dependencies": {}
 }

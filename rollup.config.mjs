@@ -3,6 +3,10 @@ import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
 import dts from 'rollup-plugin-dts';
 
+//optimization
+import { terser } from 'rollup-plugin-terser';
+import PeerDepsExternalPlugin from 'rollup-plugin-peer-deps-external';
+
 export default [
   {
     input: 'src/index.ts',
@@ -19,9 +23,11 @@ export default [
       }
     ],
     plugins: [
+      PeerDepsExternalPlugin(),
       resolve(),
       commonjs(),
-      typescript({ tsconfig: './tsconfig.json' })
+      typescript({ tsconfig: './tsconfig.json' }),
+      terser()
     ]
   },
   {
