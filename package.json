@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "21 21 21",
   "scripts": {
     "rollup": "rollup -c",
@@ -20,6 +20,7 @@
     "@storybook/addon-essentials": "^6.5.13",
     "@storybook/addon-interactions": "^6.5.13",
     "@storybook/addon-links": "^6.5.13",
+    "@storybook/addon-postcss": "^2.0.0",
     "@storybook/builder-webpack4": "^6.5.13",
     "@storybook/manager-webpack4": "^6.5.13",
     "@storybook/react": "^6.5.13",
